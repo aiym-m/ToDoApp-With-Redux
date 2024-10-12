@@ -1,0 +1,70 @@
+.create-todo {
+    background-color: #f8f9fa; /* Light background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 400px; /* Limit the width */
+    margin: 20px auto; /* Center it horizontally */
+  }
+  
+  /* Form styling */
+  .create-todo form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Space between input and button */
+  }
+  
+  /* Input field styling */
+  .create-todo input[type="text"] {
+    width: 100%; /* Full width */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light border */
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+  }
+  
+  /* Input field focus effect */
+  .create-todo input[type="text"]:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+  }
+  
+  /* Button styling */
+  .create-todo button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Primary blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover */
+  }
+  
+  /* Button hover and active state */
+  .create-todo button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .create-todo button:active {
+    transform: scale(0.98); /* Slightly shrink on click */
+  }
+  
+  /* Responsive design: Ensure the form looks good on small screens */
+  @media (max-width: 600px) {
+    .create-todo {
+      padding: 15px;
+      max-width: 100%; /* Allow full width on smaller screens */
+    }
+  
+    .create-todo input[type="text"] {
+      font-size: 14px; /* Slightly smaller font for mobile */
+    }
+  
+    .create-todo button {
+      font-size: 14px;
+    }
+  }

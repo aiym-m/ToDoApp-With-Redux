@@ -1,0 +1,76 @@
+.main-div-header {
+    background-color: #f0f0f0; /* Light background for header */
+    padding: 10px 20px; /* Padding around the header */
+    border-bottom: 2px solid #ddd; /* Subtle border at the bottom */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling for the list of header items */
+  .list-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Styling for the navigation links */
+  .header-div {
+    display: flex;
+    gap: 20px; /* Space between the navigation links */
+  }
+  
+  .header-div a {
+    text-decoration: none;
+    color: #007bff; /* Primary link color */
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s; /* Smooth transitions for hover effect */
+    border-radius: 5px;
+  }
+  
+  .header-div a:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: white; /* White text on hover */
+  }
+  
+  /* Styling for the login tab */
+  .login-tab a {
+    text-decoration: none;
+    color: #ff5722; /* Different color for the login link */
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+  }
+  
+  .login-tab a:hover {
+    background-color: #ff5722; /* Orange background on hover */
+    color: white;
+  }
+  
+  /* Responsive design: making the layout mobile-friendly */
+  @media (max-width: 768px) {
+    .main-div-header {
+      flex-direction: column; /* Stack the items vertically on smaller screens */
+      align-items: flex-start;
+    }
+  
+    .list-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .header-div {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .login-tab {
+      margin-top: 15px; /* Add spacing above the login link on small screens */
+    }
+  }

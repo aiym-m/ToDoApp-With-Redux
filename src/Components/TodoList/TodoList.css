@@ -1,0 +1,26 @@
+.todo-list {
+    max-width: 800px; /* Limit the width of the list */
+    margin: 0 auto; /* Center the list horizontally */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between todo cards */
+    background-color: #f7f7f7; /* Light background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Empty state message (if needed) */
+  .todo-list .empty-state {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-top: 20px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .todo-list {
+      padding: 10px;
+    }
+  }
