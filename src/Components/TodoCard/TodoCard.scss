@@ -1,0 +1,36 @@
+.todo-card{
+    display:flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    background-color:white;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.title-check{
+    display: flex;
+    gap:10px;
+    font-size: 0.8rem;
+    input:hover{
+        color: blue;
+    }
+
+    h2{
+        font-weight: 400;
+    }
+
+}
+.buttons{
+    display: flex;
+    flex-wrap: nowrap;
+    gap:20px;
+    align-items: center;
+    font-size: smaller;
+    button{
+        height: 40px;
+    }
+    button:hover{
+        color: red;
+    }
+}
